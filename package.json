@@ -1,0 +1,23 @@
+{
+  "name": "pretty-hot-ranking-algorithm",
+  "description": "Algorithm that measures how relevant a given data set is, kinda like Reddit",
+  "repository": "yoshuawuyts/pretty-hot-ranking-algorithm",
+  "version": "1.0.0",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "start": "node .",
+    "test": "standard && npm run deps && nyc node test.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "dependency-check": "^2.8.0",
+    "nyc": "^10.2.0",
+    "standard": "^10.0.0",
+    "tape": "^4.6.3"
+  },
+  "keywords": [
+    "algorithm",
+    "cool"
+  ]
+}
