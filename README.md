@@ -12,10 +12,12 @@ site that always has fresh, relevant content for people to discover.
 ```js
 var rank = require('pretty-hot-ranking-algorithm')
 
+var start = new Date(20, 2, 2006)
 var upvotes = 15
 var downvotes = 4
-var date = Date.now()
-var itemRank = rank(upvotes, downvotes, date)
+var date = new Date()
+
+var itemRank = rank(upvotes, downvotes, date, start)
 ```
 
 ## API
